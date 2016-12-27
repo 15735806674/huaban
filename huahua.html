@@ -8,85 +8,84 @@
     <title>Document</title>
 </head>
 <style>
-    body{
+    body,html{
         margin: 0;
         padding:0;
-        list-style: none;
-        box-sizing: border-box;
-        background-size: auto;
         width: 100%;
         height: 100%;
+        background: url("hua1.png");
+        background-size: 100% 100%;
+        box-sizing: border-box;
     }
-    body,ul,li{
+    ul,li{
         margin: 0;
         padding:0;
         list-style: none;
-        box-sizing: border-box;
     }
     .box{
-        width:800px;
-        height:600px;
+        width:730px;
+        height:500px;
         position: fixed;
-        left:0;
-        top:0;
+        left:100px;
+        top:0px;
         right:0;
         bottom:0;
         margin:auto;
-        border:1px solid #000;
-        background: #eee;
+        /*border:1px solid #000;*/
+        /*background: #eee;*/
     }
     .menu{
         width: 100%;
         height:40px;
-        background: #9876AA;
+        /*background: #9876AA;*/
         line-height:40px;
         text-align: center;
     }
     .menu .menu-list{
         float: left;
-        padding:0 20px;
+        padding:0 10px;
         font-size: 15px;
         font-family: "微软雅黑";
-        margin-left:40px;
+        margin-left:30px;
         transition:color 0.5s ease;
         transition:background 0.5s ease;
         cursor: pointer;
     }
     .menu .menu-list:hover{
-        background:#B76B4B;
-        color:#fff;
+        /*background:#B76B4B;*/
+        color:#000;
     }
     .main{
         width: 100%;
-        height: 560px;
+        height:450px;
     }
     .main .aside-menu{
         width:20%;
         height: 100%;
         overflow: auto;
-        border-right: 1px solid #000;
-        background: #fff;
+        /*border-right: 1px solid #000;*/
+        /*background: #fff;*/
         float: left;
         overflow: auto;
-        text-align: center;
+       text-indent: 30px;
         font-family: "微软雅黑";
         line-height: 30px;
         box-sizing: border-box;
-        background:#52455F;
+        /*background:#52455F;*/
     }
     .aside-menu-list:not(:first-child){
         display: none;
     }
     .aside-menu-list li{
         margin-top: 10px;
-        background: #1A3B29;
-        color:#fff;
+        /*background: #1A3B29;*/
+        color:#000;
         border-radius: 10px;
-        box-shadow: 0 0 20px orange;
+        /*box-shadow: 0 0 20px orange;*/
         cursor: pointer;
     }
     .aside-menu-list li:hover{
-        background: #AF6575;
+        /*background: #AF6575;*/
     }
     .main .canvas-box{
         float: left;
@@ -97,7 +96,7 @@
 
     }
     .main .canvas-box canvas{
-        background: #000;
+        /*background: #fff;*/
     }
     .main .canvas-box .copy{
         position: absolute;
