@@ -50,6 +50,7 @@
         transition:color 0.5s ease;
         transition:background 0.5s ease;
         cursor: pointer;
+        background: url("ff.png")no-repeat;
     }
     .menu .menu-list:hover{
         /*background:#B76B4B;*/
@@ -80,7 +81,7 @@
         margin-top: 10px;
         /*background: #1A3B29;*/
         color:#000;
-        border-radius: 10px;
+        /*border-radius: 10px;*/
         /*box-shadow: 0 0 20px orange;*/
         cursor: pointer;
     }
@@ -202,7 +203,29 @@
         })
 
 //        橡皮擦
+        var eraserobj=$(".aside-menu-list:eq(5) li");
+        $(".eraserobj").click(function(){
+            alert(1)
+            draws.isshowxp=true;
+            draws.eraser(erasers);
+        })
 
+        $(".aside-menu-list:eq(5) li").click(function(){
+            var num=$(this).attr("data-role");
+            if(num!=="null") {
+                draws.isshowxp=true;
+                draws.eraserwh=num;
+                draws.eraser(erasers);
+            }
+        })
+
+        $(".aside-menu-list:eq(5) input").change(function(){
+            var num=$(this).val();
+            draws.isshowxp=true;
+            draws.eraserwh=num;
+            draws.eraser(erasers);
+
+        })
     }
 </script>
 <body>
@@ -259,7 +282,10 @@
                <li data-role="null">num:<input type="number"></li>
            </ul>
            <ul class="aside-menu-list">
-               <li><input type="number"></li>
+               <li data-role="10">小</li>
+               <li data-role="30">中</li>
+               <li data-role="50">大</li>
+               <li data-role="null"><input type="number"></li>
            </ul>
            <ul class="aside-menu-list">
 
